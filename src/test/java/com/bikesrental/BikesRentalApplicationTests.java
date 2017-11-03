@@ -54,7 +54,7 @@ public class BikesRentalApplicationTests {
 		rentals.add(rw);
 		
 		RentalFamily rf = new RentalFamily(rentals);
-		Assert.assertEquals(new BigDecimal("95"), rf.calculate());
+		Assert.assertEquals(new BigDecimal("66.5"), rf.calculate());
 	}
 	
 	@Test
@@ -82,7 +82,7 @@ public class BikesRentalApplicationTests {
 			result = result.add(rental.calculate());
 		}
 		
-		Assert.assertEquals(new BigDecimal("170"), result);
+		Assert.assertEquals(new BigDecimal("144.5"), result);
 		
 	}
 

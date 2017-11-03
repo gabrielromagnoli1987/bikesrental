@@ -27,6 +27,7 @@ public class RentalFamily extends Rental {
 		for (Rental rental : rentals) {
 			result = result.add(rental.calculate());
 		}
+		result = result.subtract(result.multiply(new BigDecimal("0.3")));
 		return result;
 			
 	}
